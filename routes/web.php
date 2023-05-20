@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 Route::get('/counter', \App\Http\Livewire\Counter::class);
 Route::get('/calculator', \App\Http\Livewire\Calculator::class);
+Route::get('/todolist', \App\Http\Livewire\TodoList::class);

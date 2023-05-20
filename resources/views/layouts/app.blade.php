@@ -18,11 +18,13 @@
         <style>
             html{
                 background: #dcdcdc;
+                height: 100vh;
             }
             .center-items{
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+                align-items: center;
             }
             .center-items h2{
                 font-size: 6rem;
@@ -31,15 +33,17 @@
         @vite(['resources/css/app.css' , 'resources/js/app.js'])
         @livewireStyles
     </head>
-    <body class="antialiased">
-        <nav class="flex bg-slate-700 text-white">
+    <body class="antialiased flex h-screen">
+        <div class="flex bg-slate-700 text-white justify-center flex-col">
+            <a href="/" class="py-4 px-6 bg-slate-800 {{ (request()->routeIs('counter')) ? '' : 'bg-slate-800' }}">Main Page
+            </a>
             <a href="/counter" class="py-4 px-6 hover:bg-slate-800 {{ (request()->routeIs('counter')) ? 'bg-slate-800' : '' }}">Counter
             </a>
 
             <a href="/calculator" class="py-4 px-6 hover:bg-slate-800 {{ (request()->routeIs('calculator')) ? 'bg-slate-800' : '' }}">Calculator
             </a>
 
-            <a href="/todo-list" class="py-4 px-6 hover:bg-slate-800 {{ (request()->routeIs('todo-list')) ? 'bg-slate-800' : '' }}">TodoList
+            <a href="/todolist" class="py-4 px-6 hover:bg-slate-800 {{ (request()->routeIs('todo-list')) ? 'bg-slate-800' : '' }}">TodoList
             </a>
 
             <a href="/cascading-dropdown" class="py-4 px-6 hover:bg-slate-800 {{ (request()->routeIs('cascading-dropdown')) ? 'bg-slate-800' : '' }}">Cascading Dropdown
@@ -47,14 +51,14 @@
 
             <a href="/products" class="py-4 px-6 hover:bg-slate-800 {{ (request()->routeIs('products')) ? 'bg-slate-800' : '' }}">Products Search
             </a>
-            
+
             <a href="/image-upload" class="py-4 px-6 hover:bg-slate-800 {{ (request()->routeIs('image-upload')) ? 'bg-slate-800' : '' }}">Image Upload
             </a>
 
             <a href="/register" class="py-4 px-6 hover:bg-slate-800 {{ (request()->routeIs('register')) ? 'bg-slate-800' : '' }}">Registration
             </a>
-        </nav>
-        <div class="center-items">
+        </div>
+        <div class="flex justify-center flex-col w-full">
             {{ $slot }}
         </div>
         @livewireScripts

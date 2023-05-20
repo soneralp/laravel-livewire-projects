@@ -1,6 +1,6 @@
 <div>
     <div class="flex flex-col items-center p-16">
-        <h2>Calculator</h2>
+        <h2 class="text-8xl">Calculator</h2>
         <div class="flex p-16 mx-auto justify-center items-center gap-4">
             <input type="number" wire:model="number1" placeholder="Number 1">
             <select class="w-24" wire:model="action">
