@@ -6,16 +6,15 @@
 
 <h2>Getting Started</h2>
 
-    <p>To run the project on your local machine, follow these steps:</p>
-
-    <ol>
-        <li>Clone the project from GitHub.</li>
-        <pre><code>git clone &lt;repo-link&gt;</code></pre>
-        <li>Go to the project directory.</li>
-        <pre><code>cd project-directory</code></pre>
-        <li>Install the necessary dependencies.</li>
-        <pre><code>npm install</code></pre>
-        <li>Start the development server.</li>
-        <pre><code>npm run dev</code></pre>
-        <li>Open your browser and go to <code>http://localhost:3000</code> to view the application.</li>
-    </ol>
+<p>To run the project on your local machine, follow these steps:</p>
+<ol>
+    <li>Clone the project from GitHub.</li>
+    <pre><code>git clone &lt;repo-link&gt;</code></pre>
+    <li>Go to the project directory.</li>
+    <pre><code>cd project-directory</code></pre>
+    <li>Install the necessary dependencies.</li>
+    <pre><code>npm install</code></pre>
+    <li>Start the development server.</li>
+    <pre><code>npm run dev</code></pre>
+    <li>Open your browser and go to <code>http://localhost:3000</code> to view the application.</li>
+</ol>
